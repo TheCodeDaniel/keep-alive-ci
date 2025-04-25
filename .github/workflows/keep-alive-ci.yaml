@@ -1,8 +1,9 @@
 name: Keep Railway Alive
 
 on:
+  push: # Runs on every commit
   schedule:
-    - cron: "*/4 * * * *" # every 4 minutes (UTC)
+    - cron: "*/4 * * * *" # Runs every 4 minutes (UTC)
 
 jobs:
   ping:
